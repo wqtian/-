@@ -20,7 +20,7 @@
 ## 数字证书签发和验证流程
 
 如下图图所示，为数字证书签发和验证流程：
-![证书签发与验证](/assets/img/https-1.jpg "证书签发与验证")
+![证书签发与验证](./assets/img/https-1.jpg "证书签发与验证")
 
 CA 签发证书的过程，如上图左边部分：
 
@@ -38,7 +38,7 @@ CA 签发证书的过程，如上图左边部分：
 ## 证书链
 
 但事实上，证书的验证过程中还存在一个证书信任链的问题，因为我们向 CA 申请的证书一般不是根证书签发的，而是由中间证书签发的，比如百度的证书，从下图你可以看到，证书的层级有三级：
-![证书链](/assets/img/https-2.jpg "证书链")
+![证书链](./assets/img/https-2.jpg "证书链")
 
 对于这种三级层级关系的证书的验证过程如下：
 
@@ -47,11 +47,11 @@ CA 签发证书的过程，如上图左边部分：
 3. “GlobalSign Organization Validation CA - SHA256 - G2” 证书被信任后，可以使用 “GlobalSign Organization Validation CA - SHA256 - G2” 证书中的公钥去验证 http://baidu.com 证书的可信性，如果验证通过，就可以信任 http://baidu.com 证书。
 
 这样的一层层地验证就构成了一条信任链路，整个证书信任链验证流程如下图所示：
-![证书验证链](/assets/img/https-3.jpg "证书验证链")
+![证书验证链](./assets/img/https-3.jpg "证书验证链")
 
 ## 证书具体形式
 
-![证书](/assets/img/https-4.png "证书-1")  ![证书](/assets/img/https-5.png "证书-2")
+![证书](./assets/img/https-4.png "证书-1")  ![证书](./assets/img/https-5.png "证书-2")
 
 ## 证书的指纹和签名
 
@@ -65,7 +65,7 @@ CA 签发证书的过程，如上图左边部分：
 
 ## HTTPS的数字证书验证过程
 
-![https 验证流程](/assets/img/https-6.png "https 验证流程")
+![https 验证流程](./assets/img/https-6.png "https 验证流程")
 
 假设这是一个浏览器的HTTPS请求:
 
