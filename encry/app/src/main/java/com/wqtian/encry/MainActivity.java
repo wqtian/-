@@ -33,6 +33,18 @@ import javax.crypto.spec.SecretKeySpec;
 
 import okio.ByteString;
 
+/*
+    本 demo 主要演示了三大类加密算法：
+    1. 消息摘要算法（MD5,SHA,MAC)
+    2. 对称加密算法 （DES, DESede, AES)
+    3. 非对称加密算法 （RSA)
+
+    经比较，在 Java 中加密算法有如下特点：
+    1. 通过 MessageDigest 类生成的算法有 MD5, SHA
+    2. 通过 MAC 类生成的算法有 MAC
+    3. 通过 Cipher 类生成的算法有 DES, DESede, AES, RSA
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "Encry";
